@@ -58,9 +58,10 @@ print(type(is_done))
 print(type(rating))
 print(type(student_name))
 """
-#Working with strings and string methods
 
-name = 'Manuel'
+#Working with strings and string methods
+"""
+name = 'Manuel Marigi'
 age = 26
 
 print(name)                    #Outputs the name.
@@ -70,3 +71,41 @@ print(f'I am {age} years old') #Same as print('I am '+ str(age) +' years old.)
 print(name.upper())            #Returns upper case
 print(name[3])                 #Prints the character specified.
 print(name.find('l'))          #will output the index of the first 'l' in the string assigned to the variable name. If there is no 'l' in the string, it will print -1.
+"""
+
+#Using Backslash in Python.
+"""
+comment = 'Performed \nExcellently!'
+
+print(comment) #Outputs Excellently on a new line.
+
+
+task_completed = 'Went\tto\tthe\tgym.'  # \t is a space tab.
+task_completed_spaces = task_completed.replace('\t', ' ')
+
+print(task_completed_spaces) #Task_completed_spaces has been used to help replace the number of spaces if task_completed is run as is.
+
+
+MyName = '"My name\'s Marigi," he said.'
+
+print(MyName) #The backslash escapes the single quote that is inside another single quote.
+
+
+s = r'\n'
+
+print(s)  # s is a raw string defined by the prefix r. \n is treated as a literal character.
+
+
+
+colors = ['red','green','blue']
+
+print(f'The RGB colors are:\n {'\n'.join(colors)}')  
+          #Output: SyntaxError: f-string expression part cannot include a backslash
+          #An f-string cannot contain a backslash character as a part of the expression inside the curly braces {}.
+
+colors = ['red','green','blue']
+rgb = '\n'.join(colors)
+
+print(f"The RGB colors are:\n{rgb}") #Fixed to give correct output.
+
+"""
