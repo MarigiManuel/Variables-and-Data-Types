@@ -1,3 +1,14 @@
+#Python uses single quotes ('), double quotes ("), triple single quotes (''') and triple-double quotes (""") to denote a string literal.
+"""
+s = 'This is a string'
+print(s)
+s = "Another string using double quotes"
+print(s)
+s = ''' string can span
+        multiple line '''
+print(s)
+"""
+
 #Python Operators
 """
 def subst_numbers(a,b):
@@ -108,4 +119,37 @@ rgb = '\n'.join(colors)
 
 print(f"The RGB colors are:\n{rgb}") #Fixed to give correct output.
 
+
+
+long_statement = "This is a very long statement that needs to be " \
+                 "broken into multiple lines for better readability. " \
+                 "Using the backslash allows you to continue the " \
+                 "statement on the next line without causing any errors."
+
+print(long_statement)  #Using the backslash \ to split a long statement across multiple lines
+
+
+import keyword
+
+print(keyword.kwlist)  #Provides the current keyword list
 """
+
+#String Concatenation
+"""
+s1 = 'String'
+s2 = 'Concatenation'
+
+print(f'{s1} {s2}')              #Using f-string to concatenate.
+print(' '.join([s1, s2]))        #Using join()
+
+mycar, myhouse, mysalary = "Mercedes", "storey", 1000000
+formatted_salary = '{:,}'.format(mysalary)
+
+print(f'I drive a {mycar}, live in a {myhouse} house, and earn ${formatted_salary} a year')
+print(', '.join([mycar, myhouse, str(formatted_salary)]))
+"""
+
+str = "Python String"
+new_str = 'J' + str[1:]
+
+print(new_str) #Replacing a string character.
