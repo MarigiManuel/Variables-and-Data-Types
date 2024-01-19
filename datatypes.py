@@ -147,9 +147,26 @@ formatted_salary = '{:,}'.format(mysalary)
 
 print(f'I drive a {mycar}, live in a {myhouse} house, and earn ${formatted_salary} a year')
 print(', '.join([mycar, myhouse, str(formatted_salary)]))
-"""
+
 
 str = "Python String"
 new_str = 'J' + str[1:]
 
 print(new_str) #Replacing a string character.
+
+
+
+price = input('Enter price($): ')
+tax = input('Enter tax rate(%): ')
+tax_amount = int(price) * int(tax)/100
+
+print(f'Tax amount is {tax_amount}')
+
+number = 42
+is_positive = bool(number > 0)
+print(is_positive)
+"""
+
+number = 42
+text_representation = str(number)
+print(text_representation)
